@@ -5,6 +5,7 @@ import android.os.Bundle
 import com.xh.kotlin.kotlin.viewpart.viewbase.CanvasDemo
 import com.xh.kotlin.kotlin.viewpart.viewbase.MyTextView
 import com.xh.kotlin.kotlin.viewpart.viewbase.PathView
+import com.xh.kotlin.kotlin.viewpart.viewbase.RegionView
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -14,7 +15,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 //        val canvasDemo = CanvasDemo(this)
 //        val pathView = PathView(this)
-        val myTextView = MyTextView(this)
-        containerId.addView(myTextView)
+//        val myTextView = MyTextView(this)
+          val regionView = RegionView(this)
+          containerId.addView(regionView)
     }
 }
