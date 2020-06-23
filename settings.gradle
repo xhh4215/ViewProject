@@ -1,2 +1,3 @@
 rootProject.name='ViewStudyProject'
 include ':app'
+include ':viewpart'
