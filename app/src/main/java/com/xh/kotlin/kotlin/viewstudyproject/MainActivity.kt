@@ -2,9 +2,7 @@ package com.xh.kotlin.kotlin.viewstudyproject
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.xh.kotlin.kotlin.viewpart.viewbase.CanvasDemo
-import com.xh.kotlin.kotlin.viewpart.viewbase.MyTextView
-import com.xh.kotlin.kotlin.viewpart.viewbase.PathView
+import com.xh.kotlin.kotlin.viewpart.viewbase.CanvasView
 import com.xh.kotlin.kotlin.viewpart.viewbase.RegionView
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -16,7 +14,8 @@ class MainActivity : AppCompatActivity() {
 //        val canvasDemo = CanvasDemo(this)
 //        val pathView = PathView(this)
 //        val myTextView = MyTextView(this)
-          val regionView = RegionView(this)
-          containerId.addView(regionView)
+//        val regionView = RegionView(this)
+        val canvasView = CanvasView(this)
+        containerId.addView(canvasView)
     }
 }

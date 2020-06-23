@@ -7,7 +7,7 @@ import android.view.View
 import androidx.appcompat.widget.AppCompatTextView
 import com.xh.kotlin.kotlin.viewpart.R
 
-class CanvasDemo : View {
+class PaintView : View {
     //初始化一个画笔对象
     private var paint = Paint()
 

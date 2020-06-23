@@ -59,6 +59,7 @@ class RegionView : View {
         paint.style = Paint.Style.FILL
         paint.color = Color.YELLOW
         drawRegion(canvas,region1,paint)
+
     }
 
     fun drawRegion(canvas: Canvas, region: Region, paint: Paint) {
