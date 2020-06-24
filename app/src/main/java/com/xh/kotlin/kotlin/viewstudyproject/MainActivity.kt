@@ -12,15 +12,15 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        reset.setOnClickListener {
-            drawTextView.reset()
-        }
+//        reset.setOnClickListener {
+//            drawTextView.reset()
+//        }
 
 //        val canvasDemo = CanvasDemo(this)
 //        val pathView = PathView(this)
 //        val myTextView = MyTextView(this)
 //        val regionView = RegionView(this)
-//        val canvasView = CanvasView(this)
-//        containerId.addView(canvasView)
+        val canvasView = CanvasView(this)
+        containerId.addView(canvasView)
     }
 }
