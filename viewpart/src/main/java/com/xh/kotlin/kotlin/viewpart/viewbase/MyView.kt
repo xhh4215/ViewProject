@@ -11,8 +11,6 @@ import android.view.View
 class MyView : View {
     constructor(context: Context, attributeSet: AttributeSet) :
             super(context, attributeSet)
-
-
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
         val baseLineX = 0f
