@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 //        val pathView = PathView(this)
 //        val myTextView = MyTextView(this)
 //        val regionView = RegionView(this)
-        val canvasView = CanvasView(this)
-        containerId.addView(canvasView)
+//        val canvasView = CanvasView(this)
+//        containerId.addView(canvasView)
     }
 }
