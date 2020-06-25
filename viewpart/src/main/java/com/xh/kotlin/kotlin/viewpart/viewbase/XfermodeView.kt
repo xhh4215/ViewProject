@@ -39,7 +39,7 @@ class XfermodeView(context: Context, attributeSet: AttributeSet) : View(context,
 //        paint.xfermode = PorterDuffXfermode(PorterDuff.Mode.SRC_IN)
         //CLEAR
 //        paint.xfermode = PorterDuffXfermode(PorterDuff.Mode.CLEAR)
-        paint.xfermode = PorterDuffXfermode(PorterDuff.Mode.DST)
+        paint.xfermode = PorterDuffXfermode(PorterDuff.Mode.ADD)
         canvas.drawBitmap(srcbitmap, 200f, 200f , paint)
         //还原图层
         canvas.restoreToCount(layerID)

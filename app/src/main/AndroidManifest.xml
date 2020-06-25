@@ -10,22 +10,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".XfermodeActivity">
+        <activity android:name=".FLAGActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".XfermodeActivity">
+        </activity>
         <!--
             activity 通过
          android:hardwareAccelerated="true"
                 属性  开启硬件加速
         -->
-        <activity android:name=".LightingActivity">
-
-        </activity>
-        <activity android:name=".ScaleActivity"></activity>
+        <activity android:name=".LightingActivity"></activity>
+        <activity android:name=".ScaleActivity" />
         <activity android:name=".SaturationActivity" />
         <activity android:name=".MainActivity" />
     </application>
