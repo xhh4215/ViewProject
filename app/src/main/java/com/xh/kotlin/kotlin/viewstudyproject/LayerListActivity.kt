@@ -2,6 +2,7 @@ package com.xh.kotlin.kotlin.viewstudyproject
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import kotlinx.android.synthetic.main.activity_layer_list.*
 
 /****
  *   public void setShadowLayer(float radius, float dx, float dy, int color) 实现阴影
@@ -18,5 +19,16 @@ class LayerListActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_layer_list)
+        addX.setOnClickListener {
+            shadowLayerView.AddShadowLayerX(5)
+        }
+        addY.setOnClickListener {
+            shadowLayerView.AddShadowLayerY(5)
+        }
+        addR.setOnClickListener {
+            shadowLayerView.AddShadowLayerR(10)
+        }
     }
+
+
 }
