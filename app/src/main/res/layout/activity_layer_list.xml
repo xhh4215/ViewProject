@@ -44,9 +44,9 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:shadowColor="@color/colorPrimaryDark"
             android:shadowDx="12"
             android:shadowDy="12"
-            android:shadowColor="@color/colorPrimaryDark"
             android:shadowRadius="10"
             android:text="addY" />
 
@@ -67,12 +67,18 @@
 
     <com.xh.kotlin.kotlin.viewpart.viewbase.ShadowLayerView
         android:id="@+id/shadowLayerView"
-        android:visibility="gone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="30dp" />
+        android:layout_margin="30dp"
+        android:visibility="gone" />
+
     <com.xh.kotlin.kotlin.viewpart.viewbase.ExtractAlphaView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        app:shadowColor="@color/colorPrimaryDark"
+        app:shadowRadius="30.6"
+        app:shadowX="12"
+        app:shadowY="12"
+        app:src="@drawable/avatar05" />
 
 </LinearLayout>

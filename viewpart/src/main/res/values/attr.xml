@@ -19,7 +19,7 @@
         <!--        integer 执行属性值为int类型-->
         <attr name="textScale" format="integer" />
         <!--        string 指定属性取值为字符串-->
-        <attr name="content" format="string" />
+<!--        <attr name="content" format="string" />-->
         <!--        fraction 指定属性取值为百分比-->
         <attr name="privoX" format="fraction" />
         <!--        enum 指定枚举类型-->
@@ -34,5 +34,16 @@
             <flag name="young" value="18"></flag>
             <flag name="old" value="60"></flag>
         </attr>
+    </declare-styleable>
+    <declare-styleable name="ExtractAlphaView">
+        <!--        添加阴影的图片源-->
+        <attr name="src" format="reference" />
+        <attr name="shadowX" format="integer" />
+        <attr name="shadowY" format="integer" />
+        <!--        阴影的颜色-->
+        <attr name="shadowColor" format="color" />
+        <!--        阴影的半径-->
+        <attr name="shadowRadius" format="float" />
+
     </declare-styleable>
 </resources>
