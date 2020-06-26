@@ -7,6 +7,7 @@ import android.view.View
 import com.xh.kotlin.kotlin.viewpart.R
 
 class ShadowLayerView : View {
+    private var isClear = false
     var paint = Paint()
     var Dx = 0
     var Dy = 0
@@ -41,15 +42,18 @@ class ShadowLayerView : View {
 
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
-        paint.setShadowLayer(radius.toFloat(), Dx.toFloat(), Dy.toFloat(), Color.GRAY)
+        if (isClear) {
+            paint.clearShadowLayer()
+        } else {
+            paint.setShadowLayer(radius.toFloat(), Dx.toFloat(), Dy.toFloat(), Color.GRAY)
+
+        }
 
         canvas.drawText("栾小黑的blog", 300f, 300f, paint)
         canvas.drawCircle(500f, 500f, 50f, paint)
 //        canvas.drawBitmap(bitmap,null,Rect(200,300,200+bitmap.width,300+bitmap.height),paint)
 
     }
-
-
 
 
     fun AddShadowLayerX(value: Int) {
@@ -64,6 +68,13 @@ class ShadowLayerView : View {
 
     fun AddShadowLayerR(value: Int) {
         radius += value
+        postInvalidate()
+    }
+
+    fun ClearShadowLayer() {
+        if (!isClear) {
+            isClear = true
+        }
         postInvalidate()
     }
 }

@@ -28,6 +28,9 @@ class LayerListActivity : AppCompatActivity() {
         addR.setOnClickListener {
             shadowLayerView.AddShadowLayerR(10)
         }
+        clear.setOnClickListener {
+            shadowLayerView.ClearShadowLayer()
+        }
     }
 
 

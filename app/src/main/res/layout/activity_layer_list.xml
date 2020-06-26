@@ -35,29 +35,36 @@
         <Button
             android:id="@+id/addX"
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="addX" />
 
         <Button
             android:id="@+id/addY"
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="addY" />
 
         <Button
             android:id="@+id/addR"
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="addR" />
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="clear" />
     </LinearLayout>
 
     <com.xh.kotlin.kotlin.viewpart.viewbase.ShadowLayerView
         android:id="@+id/shadowLayerView"
-        android:layout_margin="30dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp" />
 
 </LinearLayout>
