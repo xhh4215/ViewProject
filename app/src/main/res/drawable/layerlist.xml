@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/avatar05"/>
+    <item android:drawable="@drawable/avatar08"/>
+    <item android:drawable="@drawable/avatar12"/>
+    <item android:drawable="@drawable/circle"/>
+
+</layer-list>
