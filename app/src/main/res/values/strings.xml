@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">ViewStudyProject</string>
     <string name="add_color">加深颜色</string>
+    <string name="button_background">带背景的按钮</string>
 </resources>
