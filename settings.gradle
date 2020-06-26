@@ -1,3 +1,4 @@
 rootProject.name='ViewStudyProject'
 include ':app'
 include ':viewpart'
+include ':pullscrollview'

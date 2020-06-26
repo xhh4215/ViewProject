@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- name 通过这个name字段指定为那个类定义的自定义属性
+      一个属性同时可以指定多个类型-->
+    <declare-styleable name="MyTextView">
+        <!--        reference 是指从 string.xml、drawable.xml、color.xm等引用过来的数值     -->
+        <attr name="header" format="reference"></attr>
+        <!--        dimension 指的是是从dimension.xml里引用过来的内容.注意,这里如果是dp那就会做像素转换-->
+        <attr name="headerHeight" format="dimension"></attr>
+        <!--       color 指的是颜色值 -->
+        <attr name="textColor" format="color" />
+        <!--        boolean 指的是boolean数值-->
+        <attr name="isVisable" format="boolean" />
+        <!--       float 指定属性取 浮点型数据 -->
+        <attr name="textLocationTop" format="float" />
+        <attr name="textLocationBottom" format="float" />
+        <attr name="textLocationLeft" format="float" />
+        <attr name="textLocationRight" format="float" />
+        <!--        integer 执行属性值为int类型-->
+        <attr name="textScale" format="integer" />
+        <!--        string 指定属性取值为字符串-->
+        <attr name="content" format="string" />
+        <!--        fraction 指定属性取值为百分比-->
+        <attr name="privoX" format="fraction" />
+        <!--        enum 指定枚举类型-->
+        <attr name="type">
+            <enum name="vertical" value="1" />
+            <enum name="horizontal" value="0" />
+        </attr>
+        <attr name="headerVisibleHeight" format="dimension"></attr>
+        <!--        flag是自己定义的,类似于 android:gravity="top"-->
+        <attr name="age">
+            <flag name="child" value="10"></flag>
+            <flag name="young" value="18"></flag>
+            <flag name="old" value="60"></flag>
+        </attr>
+    </declare-styleable>
+</resources>
