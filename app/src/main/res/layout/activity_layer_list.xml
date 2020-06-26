@@ -44,6 +44,10 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:shadowDx="12"
+            android:shadowDy="12"
+            android:shadowColor="@color/colorPrimaryDark"
+            android:shadowRadius="10"
             android:text="addY" />
 
         <Button

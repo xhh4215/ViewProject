@@ -37,11 +37,12 @@ class ShadowLayerView : View {
         paint.isAntiAlias = true
         paint.color = Color.GREEN
         paint.textSize = 50f
-//        bitmap = BitmapFactory.decodeResource(this.resources, R.drawable.smallpz)
+        bitmap = BitmapFactory.decodeResource(this.resources, R.drawable.smallpz)
     }
 
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
+        canvas.drawColor(Color.BLACK)
         if (isClear) {
             paint.clearShadowLayer()
         } else {
@@ -51,7 +52,11 @@ class ShadowLayerView : View {
 
         canvas.drawText("栾小黑的blog", 300f, 300f, paint)
         canvas.drawCircle(500f, 500f, 50f, paint)
-//        canvas.drawBitmap(bitmap,null,Rect(200,300,200+bitmap.width,300+bitmap.height),paint)
+
+        paint.style = Paint.Style.FILL
+//        paint.maskFilter = BlurMaskFilter(50f,BlurMaskFilter.Blur.OUTER)
+        paint.maskFilter = BlurMaskFilter(50f,BlurMaskFilter.Blur.NORMAL)
+        canvas.drawCircle(200f,200f,100f,paint)
 
     }
 

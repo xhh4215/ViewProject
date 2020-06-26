@@ -1,5 +1,6 @@
 package com.xh.kotlin.kotlin.viewstudyproject
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_layer_list.*
@@ -19,6 +20,8 @@ class LayerListActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_layer_list)
+        addX.setShadowLayer(10f,3f,3f,Color.GREEN)
+
         addX.setOnClickListener {
             shadowLayerView.AddShadowLayerX(5)
         }
