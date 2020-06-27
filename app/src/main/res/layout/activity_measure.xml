@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xh.kotlin.kotlin.viewmeasure.SimpleLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    tools:context=".MeasureActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+        android:background="@color/colorAccent1"
+        android:text="第一个View" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+
+        android:background="@color/colorAccent2"
+        android:text="第二个View" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent3"
+        android:text="第三个View" />
+
+</com.xh.kotlin.kotlin.viewmeasure.SimpleLayout>
