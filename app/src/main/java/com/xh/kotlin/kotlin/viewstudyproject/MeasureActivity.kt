@@ -6,6 +6,6 @@ import android.os.Bundle
 class MeasureActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_measure)
+        setContentView(R.layout.measure_activity_two)
     }
 }

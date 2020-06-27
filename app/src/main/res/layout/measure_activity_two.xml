@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <com.xh.kotlin.kotlin.viewmeasure.FlowLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="#ff00ff">
+       <TextView
+           style="@style/text_flag_01"
+           android:text="Welcome"
+           android:background="@drawable/laylist_one"
+           android:textColor="#43BBE7" />
+
+       <TextView
+           style="@style/text_flag_01"
+           android:background="@drawable/laylist_one"
+
+           android:text="IT工程师"
+           android:textColor="#43BBE7" />
+
+       <TextView
+           style="@style/text_flag_01"
+           android:text="我真是可以的"
+           android:background="@drawable/laylist_one"
+
+           android:textColor="#43BBE7" />
+       <TextView
+           style="@style/text_flag_01"
+           android:text="你觉得呢"
+           android:background="@drawable/laylist_one"
+
+           android:textColor="#43BBE7" />
+
+       <TextView
+           style="@style/text_flag_01"
+           android:text="不要只知道挣钱"
+           android:background="@drawable/laylist_one"
+
+           android:textColor="#43BBE7" />
+
+       <TextView
+           style="@style/text_flag_01"
+           android:text="努力ing"
+           android:background="@drawable/laylist_one"
+
+           android:textColor="#43BBE7" />
+
+       <TextView
+           style="@style/text_flag_01"
+           android:text="I thick i can"
+           android:background="@drawable/laylist_one"
+
+           android:textColor="#43BBE7" />
+
+   </com.xh.kotlin.kotlin.viewmeasure.FlowLayout>
+</LinearLayout>
