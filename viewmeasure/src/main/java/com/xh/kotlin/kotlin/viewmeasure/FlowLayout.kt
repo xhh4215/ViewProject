@@ -1,7 +1,6 @@
 package com.xh.kotlin.kotlin.viewmeasure
 
 import android.content.Context
-import android.text.Layout
 import android.util.AttributeSet
 import android.view.ViewGroup
 import kotlin.math.max
