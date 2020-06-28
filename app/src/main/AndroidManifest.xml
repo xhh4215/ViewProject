@@ -10,17 +10,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MeasureActivity">
+        <activity android:name="com.xh.kotlin.kotlin.viewlistener.TouchActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ShaderActivity">
+        <activity android:name=".MeasureActivity">
+
         </activity>
+        <activity android:name=".ShaderActivity"></activity>
         <activity android:name=".SelfAttrActivity" />
-        <activity android:name=".LayerListActivity"></activity>
+        <activity android:name=".LayerListActivity" />
         <activity android:name=".PracticeActivity" />
         <activity android:name=".FLAGActivity" />
         <activity android:name=".XfermodeActivity" />

@@ -118,6 +118,13 @@ class FlowLayout : ViewGroup {
         return MarginLayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT)
     }
 
+    /***
+     * 这个方法是用来设置  标识 FLAG_DISALLOW_INSERCERT 一旦设置成功ViewGroup将无法拦截除
+     * ACTION_DOWN以外的其他事件
+     */
+    override fun requestDisallowInterceptTouchEvent(disallowIntercept: Boolean) {
+        super.requestDisallowInterceptTouchEvent(disallowIntercept)
+    }
     override fun generateLayoutParams(attrs: AttributeSet): LayoutParams {
         return MarginLayoutParams(context, attrs)
     }

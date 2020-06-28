@@ -3,7 +3,10 @@ package com.xh.kotlin.kotlin.viewmeasure
 import android.content.Context
 import android.util.AttributeSet
 import android.util.Log
+import android.view.MotionEvent
+import android.view.VelocityTracker
 import android.view.ViewGroup
+import android.widget.Toast
 import com.xh.kotlin.kotlin.interfaces.OnItemClickListener
 
 open class WaterfallLayout : ViewGroup {
@@ -24,8 +27,12 @@ open class WaterfallLayout : ViewGroup {
     private var top = IntArray(column)
 
     constructor(context: Context) : super(context)
-    constructor(context: Context, attributeSet: AttributeSet) : this(context, attributeSet,0)
-    constructor(context: Context, attributeSet: AttributeSet,defStyle:Int) : super(context, attributeSet,defStyle)
+    constructor(context: Context, attributeSet: AttributeSet) : this(context, attributeSet, 0)
+    constructor(context: Context, attributeSet: AttributeSet, defStyle: Int) : super(
+        context,
+        attributeSet,
+        defStyle
+    )
 
     /***
      * 进行的是自定义View的测量操作
@@ -56,9 +63,9 @@ open class WaterfallLayout : ViewGroup {
         clearTop()
         for (i in 0 until childCount) {
             var child = getChildAt(i)
-            Log.d("tag","测量的ziview的高度${child.measuredWidth}")
+            Log.d("tag", "测量的ziview的高度${child.measuredWidth}")
             //获取子View的高度
-            var childHeight = (child.measuredHeight * childWidh )/ child.measuredWidth
+            var childHeight = (child.measuredHeight * childWidh) / child.measuredWidth
             //获取高度最小的那列
             var minColunm = getMinHeightColum()
             top[minColunm] += childHeight + vSpace
@@ -89,6 +96,26 @@ open class WaterfallLayout : ViewGroup {
             child.layout(tleft, ttop, tright, tbottom)
 
         }
+    }
+
+    override fun dispatchTouchEvent(ev: MotionEvent?): Boolean {
+       return super.dispatchTouchEvent(ev)
+    }
+
+    override fun onTouchEvent(event: MotionEvent?): Boolean {
+        //获取速度追踪对象
+        val velocityTracker = VelocityTracker.obtain()
+        velocityTracker.addMovement(event)
+        velocityTracker.computeCurrentVelocity(1000)
+        var xVelocityTracker = velocityTracker.xVelocity
+        var yVelocityTracker = velocityTracker.yVelocity
+        Log.d(
+            "velocityTracker",
+            "the xVelocityTracker is :$xVelocityTracker,the yVelocityTracker is $yVelocityTracker"
+        )
+        velocityTracker.clear()
+        velocityTracker.recycle()
+        return true
     }
 
     private fun getMaxHeight(): Int {
