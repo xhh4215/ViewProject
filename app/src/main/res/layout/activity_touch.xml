@@ -7,7 +7,7 @@
     android:orientation="vertical"
     tools:context="com.xh.kotlin.kotlin.viewlistener.TouchActivity">
 
-    <com.xh.kotlin.kotlin.viewlistener.MyView
+    <com.xh.kotlin.kotlin.viewmeasure.MyView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorBlack"
@@ -22,7 +22,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.xh.kotlin.kotlin.viewlistener.MyView
+    <com.xh.kotlin.kotlin.viewmeasure.MyView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorBlack"
@@ -36,22 +36,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.xh.kotlin.kotlin.viewlistener.MyView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorBlack"
-        android:gravity="center"
-        android:padding="@dimen/dp_10"
-        android:text="@string/app_name"
-        android:textColor="@color/colorWhile"
-        android:textSize="@dimen/dp_10"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <com.xh.kotlin.kotlin.viewlistener.MyView
+    <com.xh.kotlin.kotlin.viewmeasure.MyView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorBlack"
@@ -66,7 +51,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.xh.kotlin.kotlin.viewlistener.MyView
+    <com.xh.kotlin.kotlin.viewmeasure.MyView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorBlack"
@@ -81,7 +66,22 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.xh.kotlin.kotlin.viewlistener.MyView
+    <com.xh.kotlin.kotlin.viewmeasure.MyView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlack"
+        android:gravity="center"
+        android:padding="@dimen/dp_10"
+        android:text="@string/app_name"
+        android:textColor="@color/colorWhile"
+        android:textSize="@dimen/dp_10"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.xh.kotlin.kotlin.viewmeasure.MyView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorBlack"
