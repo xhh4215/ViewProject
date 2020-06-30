@@ -41,6 +41,12 @@ import android.view.View
  *                                                如果View设置了背景则返回mingWidth和背景最小宽大两者中的最大值，高度的获取是相同的道理
  *  备注：直接继承View的自定义控件需要重写onMeasure方法设置wrap_cpntent的时候自身的大小，否则在布局中 wrap_content会和match_parent相同
  *
+ * ViewGroup的绘制流程简述： 他在measure的时候会调用 measure方法 在内部对每一个子View调用measureChild的方法
+ *   在measureChild方法内部取出子View的LayoutParam，通过 getChildMeasureSpec创建子View的MeasureSpec
+ *   接着将MeasureSpec传递给子View进行绘制的流程处理
+ *
+ *
+ *
  */
 class DrawView(context: Context, attributeSet: AttributeSet) : View(context, attributeSet) {
     override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {

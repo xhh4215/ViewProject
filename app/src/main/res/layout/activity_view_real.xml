@@ -4,11 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".ViewRealActivity">
 
+
+    <Button
+        android:id="@+id/methodOne"
+        style="@style/text_flag_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/getSizeOne" />
+
+    <Button
+        android:id="@+id/methodTwo"
+        style="@style/text_flag_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/getSizeTwo" />
+
+    <Button
+        android:id="@+id/methodThree"
+        style="@style/text_flag_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/getSizeThree" />
+
+
     <com.xh.kotlin.kotlin.view.DrawView
-        android:text="@string/app_name"
+        android:id="@+id/drawView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:background="@color/colorBlack"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:text="@string/app_name" />
+
 </LinearLayout>

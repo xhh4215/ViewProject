@@ -2,4 +2,7 @@
     <string name="app_name">ViewStudyProject</string>
     <string name="add_color">加深颜色</string>
     <string name="button_background">带背景的按钮</string>
+    <string name="getSizeOne">获取View测量的宽高方法一</string>
+    <string name="getSizeTwo">获取View测量的宽高方法二</string>
+    <string name="getSizeThree">获取View测量的宽高方法三</string>
 </resources>
